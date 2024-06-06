@@ -4,9 +4,9 @@ import SideBar from "./components/sidebar/SideBar";
 
 function App() {
   return (
-    <div className="App flex">
+    <div className=" w-[100vw] flex">
       <SideBar/>
-      <Pages/>
+      <Pages className='  '/>
       </div>
   );
 }

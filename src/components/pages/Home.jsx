@@ -1,8 +1,13 @@
 import React from 'react'
+import Main from '../main/Main'
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <div className=' w-full'>
+            <div className='w-full'>
+                <Main className="" />
+            </div>
+        </div>
     )
 }
 

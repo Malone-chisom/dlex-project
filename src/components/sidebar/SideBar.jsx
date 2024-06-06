@@ -3,7 +3,7 @@ import { assets } from '../../assets/Assets';
 
 const SideBar = () => {
     return (
-        <div className='sideBar rounded-tl-[15px]  rounded-bl-[15px] pr-[19.22px] py-[19.22px] pl-[19.22px] bg-[#183087] text-white h-[100vh] w-[199px]'>
+        <div className='sideBar rounded-tl-[15px]  rounded-bl-[15px] pr-[19.22px] py-[19.22px] pl-[19.22px] bg-[#1e3586] text-white h-[100vh] w-[230px]'>
             <div className='sideBar-Container flex flex-col h-full justify-between'>
                 <div className=' flex flex-col gap-[19.26px] '>
                     <div className=' flex'>
@@ -11,14 +11,15 @@ const SideBar = () => {
                         <h1 className=' font-medium'>Dlex</h1>
                     </div>
                     <hr />
-                    <div className="  bg-indigo-500">
-                        <div className='flex'>
-                            <div className='  '>
-                                <img src={assets.Avater} alt="" />
-                            </div>
-                            <div>
-                                <p>Dlex Designs</p>
-                                <p>general team</p>
+                    <div className=" rounded-md bg-indigo-500 pl-[11px] py-[13.18px]">
+                        <div className='flex items-center gap-2'>
+                            <div className=' flex gap-2  items-center'>
+                                <div className=' p-1 bg-yellow-500 rounded-full'>DW </div>
+
+                                <div className=' leading-3'>
+                                    <p className=' font-medium text-[13px]'>Dlex Designs</p>
+                                    <p className='text-xs text-[11px]'>general team</p>
+                                </div>
                             </div>
                             <div>
                                 <img src={assets.unfold_more} alt="" />
@@ -26,7 +27,7 @@ const SideBar = () => {
                         </div>
                         <div></div>
                     </div>
-                    <idv>
+                    <div>
                         <div className='flex'>
                             <div>                            <img src={assets.Graph} alt="" /></div>
                             <p>Dashboard</p>
@@ -43,7 +44,7 @@ const SideBar = () => {
                             <div><img src={assets.User} alt="" /></div>
                             <p>Team</p>
                         </div>
-                    </idv>
+                    </div>
 
                     <h2>SHORTCUT</h2>
 
@@ -71,12 +72,12 @@ const SideBar = () => {
                 </div>
                 <div className=' flex flex-col gap-[9.23px]'>
                     <div className='  pr-[16.25px] pl-[16.25px] py-[16.05px] rounded-md bg-[#342BC2]'>
-                        <div className='flex pb-[3.21px] justify-between'>
+                        <div className='flex pb-[3.21px] justify-between items-center'>
                             <p className=' font-medium'>Storage</p>
-                            <p className=' font-thin'>Upgrade</p>
+                            <p className=' font-extralight text-sm'>Upgrade</p>
                         </div>
                         <p className=' text-xs'>3.4 GB <span className=''>of 15GB</span></p>
-                        <div className=' bg-indigo-500 '><hr className=' w-9' /></div>
+                        <div className=' bg-indigo-500 mt-[10.32px]'><hr className=' w-9' /></div>
                     </div>
                     <hr />
                     <div>
