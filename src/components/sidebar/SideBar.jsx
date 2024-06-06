@@ -3,7 +3,7 @@ import { assets } from '../../assets/Assets';
 
 const SideBar = () => {
     return (
-        <div className='sideBar hidden custom-664:block  rounded-tl-[15px]  rounded-bl-[15px] pr-[19.22px] py-[19.22px] pl-[19.22px] bg-[#1e3586] text-white h-[100vh] w-[230px]'>
+        <div className='sideBar hidden mobile-L:block  rounded-tl-[15px]  rounded-bl-[15px] pr-[19.22px] py-[19.22px] pl-[19.22px] bg-[#1e3586] text-white h-[100vh] w-[230px]'>
             <div className='sideBar-Container flex flex-col h-full justify-between'>
                 <div className=' flex flex-col gap-[19.26px] '>
                     <div className=' flex'>

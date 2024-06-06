@@ -26,7 +26,7 @@ const Card = () => {
             </span>
           </div>
           <div className=' flex flex-wrap w-full justify-between '>
-            <div className='first-child  medium:w-[49%] w-[100%]  h-auto  rounded-md px-5 py-[2vh] bg-[#28439D] flex flex-col '>
+            <div className='first-child  medium:w-[49%] w-[100%] transition-width-2000  h-auto  rounded-md px-5 py-[2vh] bg-[#28439D] flex flex-col '>
               <div className="flex flex-col gap-[2px] mb-[3vh]">
                 <p className='text-[#FFFFFFB3] cursor-pointer'>DEADlINE 12:00</p>
                 <h2 className='text-white  cursor-pointer font-medium'>Exam - Unit 5 </h2>
@@ -37,7 +37,7 @@ const Card = () => {
               </div>
 
             </div>
-            <div className='second mt-[2vh] medium:mt-0  medium:w-[49%] w-[100%] h-auto justify-between rounded-md flex'>
+            <div className='second mt-[4vh] trans medium:mt-0  medium:w-[49%] w-[100%] h-auto justify-between rounded-md flex'>
               <div className=' px-5 bg-[#d8d0d0] rounded-md w-[49%] py-5'>
                 <div  >
                   <div className='cursor-pointer'><img src={assets.check_circle_outline} alt="" /></div>
@@ -58,7 +58,7 @@ const Card = () => {
             </div>
           </div>
           <div className='flex cursor-pointer flex-wrap justify-between w-full'>
-            <div className=' w-[49%]  h-auto border rounded-md px-5 py-[2vh]'>
+            <div className=' mobile:w-[49%] w-[100%]  h-auto border rounded-md px-5 py-[2vh]'>
               <div >
                 <div className='flex justify-between'>
                   <div className='mb-[1vh]'>
@@ -83,7 +83,7 @@ const Card = () => {
 
 
             </div>
-            <div className='w-[49%] cursor-pointer h-auto rounded-md flex flex-col  px-5 border py-[2vh]'>
+            <div className='  mobile:w-[49%] mt-[4vh] w-[100%] cursor-pointer h-auto rounded-md flex flex-col  px-5 border py-[2vh]'>
               <div className='h-full relative '>
                 <h2 className='mb-[2vh] font-medium'> Overall progress</h2>
                 <div className='flex justify-between'>
