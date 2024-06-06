@@ -10,15 +10,18 @@ const Card = () => {
 
 
 
-    <div className=' *:text-sm grid h-screen relative w-[99%] verflow-y-scroll '>
+    <div className=' *:text-sm grid h-screen  w-[99%] verflow-y-scroll '>
       <div className=' w-full small:max-sm:bg-black   px-5 place-self-center flex flex-col'>
+        <span className=' absolute right-28 right top-1 z-1 '>
 
+        </span>
+        <info />
         <div className=' flex flex-col gap-9 medium:gap-10 place-items-center '>
           <div className=' w-full flex items-center justify-between px-5'>
             <h1 className=" text-xl font-bold mb-[] cursor-pointer">Professional Dashboard</h1>
-            <span onClick={() => setOn(!on)} className=' w-1/12 block medium:hidden mb-[-2%] cursor-pointer'>
+            <span onClick={() => setOn(!on)} className=' w-1/12  block custom-1233:hidden  mb-[-2%] cursor-pointer'>
               {on ? (
-                "hello"
+                "hellow"
               ) : (<img src={assets.Group1002} alt="" />)}
             </span>
           </div>
