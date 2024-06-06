@@ -11,6 +11,7 @@ module.exports = {
         '2xlarge': '1536px', // Custom name for 2x extra large screens
         'custom-1024': '1024px', // Another custom screen size
         'custom-1233': '1233px', // Another custom screen size
+        'custom-664': '664px', // Another custom screen size
 
       },
     },

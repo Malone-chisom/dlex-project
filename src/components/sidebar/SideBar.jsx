@@ -3,7 +3,7 @@ import { assets } from '../../assets/Assets';
 
 const SideBar = () => {
     return (
-        <div className='sideBar rounded-tl-[15px]  rounded-bl-[15px] pr-[19.22px] py-[19.22px] pl-[19.22px] bg-[#1e3586] text-white h-[100vh] w-[230px]'>
+        <div className='sideBar hidden custom-664:block  rounded-tl-[15px]  rounded-bl-[15px] pr-[19.22px] py-[19.22px] pl-[19.22px] bg-[#1e3586] text-white h-[100vh] w-[230px]'>
             <div className='sideBar-Container flex flex-col h-full justify-between'>
                 <div className=' flex flex-col gap-[19.26px] '>
                     <div className=' flex'>
@@ -28,20 +28,20 @@ const SideBar = () => {
                         <div></div>
                     </div>
                     <div>
-                        <div className='flex'>
-                            <div>                            <img src={assets.Graph} alt="" /></div>
+                        <div className='flex items-center '>
+                            <div className='mr-2'><img src={assets.Graph} alt="" /></div>
                             <p>Dashboard</p>
                         </div>
-                        <div className='flex'>
-                            <div><img src={assets.Chart} alt="" /></div>
+                        <div className='flex items-center'>
+                            <div className=' mr-2'><img src={assets.Chart} alt="" /></div>
                             <p>Overview</p>
                         </div>
-                        <div className='flex'>
-                            <div><img src={assets.Chat} alt="" /></div>
+                        <div className='flex items-center'>
+                            <div className=' mr-2'><img src={assets.Chat} alt="" /></div>
                             <p>Chat</p>
                         </div>
-                        <div className='flex'>
-                            <div><img src={assets.User} alt="" /></div>
+                        <div className='flex items-center'>
+                            <div className=' mr-2'><img src={assets.User} alt="" /></div>
                             <p>Team</p>
                         </div>
                     </div>
@@ -49,20 +49,20 @@ const SideBar = () => {
                     <h2>SHORTCUT</h2>
 
                     <div>
-                        <div className='flex'>
-                            <div><img src={assets.Document} alt="" /></div>
+                        <div className='flex items-center'>
+                            <div className=' mr-2'><img src={assets.Document} alt="" /></div>
                             <p>Tasks</p>
                         </div>
-                        <div className='flex'>
-                            <div><img src={assets.Danger} alt="" /></div>
+                        <div className='flex items-center'>
+                            <div className=' mr-2'><img src={assets.Danger} alt="" /></div>
                             <p>Reports</p>
                         </div>
-                        <div className='flex'>
-                            <div><img src={assets.Danger} alt="" /></div>
+                        <div className='flex items-center'>
+                            <div className=' mr-2'><img src={assets.Danger} alt="" /></div>
                             <p>Reports</p>
                         </div>
-                        <div className='flex'>
-                            <div><img src={assets.Setting} alt="" /></div>
+                        <div className='flex items-center'>
+                            <div className=' mr-2'><img src={assets.Setting} alt="" /></div>
                             <p>Settings</p>
                         </div>
                     </div>

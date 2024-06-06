@@ -26,7 +26,7 @@ const Card = () => {
             </span>
           </div>
           <div className=' flex flex-wrap w-full justify-between '>
-            <div className='first-child w-[49%] h-auto  rounded-md px-5 py-[2vh] bg-[#28439D] flex flex-col '>
+            <div className='first-child  medium:w-[49%] w-[100%]  h-auto  rounded-md px-5 py-[2vh] bg-[#28439D] flex flex-col '>
               <div className="flex flex-col gap-[2px] mb-[3vh]">
                 <p className='text-[#FFFFFFB3] cursor-pointer'>DEADlINE 12:00</p>
                 <h2 className='text-white  cursor-pointer font-medium'>Exam - Unit 5 </h2>
@@ -37,9 +37,9 @@ const Card = () => {
               </div>
 
             </div>
-            <div className='second w-[49%] h-auto justify-between rounded-md flex'>
+            <div className='second mt-[2vh] medium:mt-0  medium:w-[49%] w-[100%] h-auto justify-between rounded-md flex'>
               <div className=' px-5 bg-[#d8d0d0] rounded-md w-[49%] py-5'>
-                <div >
+                <div  >
                   <div className='cursor-pointer'><img src={assets.check_circle_outline} alt="" /></div>
                   <h2 className=' font-medium cursor-pointer'>Homework</h2>
                   <p className=' text-[#030101b3] cursor-pointer'>For today's lesson</p>
@@ -50,7 +50,7 @@ const Card = () => {
                 <div >
                   <div><img src={assets.Vector_} alt="" /></div>
                   <h2 className='font-medium cursor-pointer'>Reading</h2>
-                  <p className='text-[#FFFFFFB3]cursor-pointer'>24 words per week</p>
+                  <p className='text-[#FFFFFFB3] cursor-pointer'>24 words per week</p>
                 </div>
                 <h2 className='cursor-pointer'>2H AGO</h2>
               </div>
