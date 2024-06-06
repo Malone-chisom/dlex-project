@@ -8,23 +8,23 @@ const Info = () => {
             <div className='flex justify-around flex-col place-self-center  h-full  items-center'>
                 <div className='flex flex-col items-center '>
                     <div className='flex items-center flex-col gap-1 '>
-                        <div className='mb-2'><img src={assets.Group1002} alt="" /></div>
-                        <h1 className='font-medium'>Harrison Philip</h1>
-                        <p>Business analyst</p>
+                        <div className='mb-2 cursor-pointer'><img src={assets.Group1002} alt="" /></div>
+                        <h1 className='font-medium cursor-pointer'>Harrison Philip</h1>
+                        <p className=' cursor-pointer'>Business analyst</p>
                     </div>
                 </div>
 
                 <div className=' flex sm:min-w-[95%] w-[80%] justify-co flex-col justify-between'>
-                    <div className='border w-full rounded-md flex justify-between items-center py-3  pl-2'>
-                        <div>
-                            <p className='text-sm '>Get-10% sell price</p>
-                            <p className=' text-sm'>for 'spanish Az' cours</p>
+                    <div className='border w-full rounded-md flex justify-between items-center py-3 hover:translate-y-[-2px]  hover:duration-300  pl-2'>
+                        <div className=' cursor-pointer '>
+                            <p className='text-sm cursor-pointer '>Get-10% sell price</p>
+                            <p className=' text-sm cursor-pointer'>for 'spanish Az' cours</p>
                         </div>
-                        <div><img src={assets.keyboardarrow_right} alt="" /></div>
+                        <div className=' cursor-pointer'><img src={assets.keyboardarrow_right} alt="" /></div>
                     </div>
                     <h1 className=' font-medium  mb-5 mt-6'>Course Progress</h1>
                     <div className='flex flex-col gap-10 custom-1233:gap-5 md:gap-3 md:text-sm'>
-                        <div className='border rounded-lg py-3 pl-2'>
+                        <div className='border rounded-lg py-3 pl-2 cursor-pointer hover:translate-y-[-2px]  hover:duration-300'>
                             <div className='flex items-center'>
                                 <div className='text-[#4A4DE6] font-medium'>63%</div>
                                 <div className=' mx-2'><img src={assets.Group1003} alt="" /></div>
@@ -34,7 +34,7 @@ const Info = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=' border rounded-lg py-3 pl-2'>
+                        <div className=' border rounded-lg py-3 pl-2 cursor-pointer hover:translate-y-[-2px]  hover:duration-300'>
                             <div className='flex items-center'>
                                 <div className='text-[#FF8F00] font-medium'>78%</div>
                                 <div className=' mx-2'><img src={assets.Group1004} alt="" /></div>
@@ -44,7 +44,7 @@ const Info = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=' border rounded-lg py-3 pl-2'>
+                        <div className=' border rounded-lg cursor-pointer hover:translate-y-[-2px]  hover:duration-300 py-3 pl-2'>
                             <div className='flex items-center'>
                                 <div className='text-[#E83274] font-medium'>34%</div>
                                 <div className=' mx-2'><img src={assets.Rectangle1033} alt="" /></div>

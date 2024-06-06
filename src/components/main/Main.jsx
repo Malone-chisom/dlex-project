@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <div className=' h-[100vh] relative items-center overflow-y-scroll justify-between flex w-full ite '>
             <Card className="" />
-            <Info className=' block medium:hidden ' />
+            <Info className=' custom-1233:block ' />
         </div>
     )
 }

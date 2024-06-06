@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { assets } from '../../assets/Assets'
 import Info from '../info/Info'
+import "../../index.css"
 
 const Card = () => {
 
@@ -10,7 +11,7 @@ const Card = () => {
 
 
 
-    <div className=' *:text-sm grid h-screen  w-[99%] verflow-y-scroll '>
+    <div className=' *:text-sm grid h-screen animate-fadeIn w-[99%] verflow-y-scroll '>
       <div className=' w-full small:max-sm:bg-black   px-5 place-self-center flex flex-col'>
         <span className=' absolute right-28 right top-1 z-1 '>
 
@@ -26,7 +27,7 @@ const Card = () => {
             </span>
           </div>
           <div className=' flex flex-wrap w-full justify-between '>
-            <div className='first-child  medium:w-[49%] w-[100%] transition-width-2000  h-auto  rounded-md px-5 py-[2vh] bg-[#28439D] flex flex-col '>
+            <div className='first-child  hover:translate-y-[-2px]  hover:duration-300  medium:w-[49%] w-[100%] transition-width-2000  h-auto  rounded-md px-5 py-[2vh] bg-[#28439D] flex flex-col '>
               <div className="flex flex-col gap-[2px] mb-[3vh]">
                 <p className='text-[#FFFFFFB3] cursor-pointer'>DEADlINE 12:00</p>
                 <h2 className='text-white  cursor-pointer font-medium'>Exam - Unit 5 </h2>
@@ -37,8 +38,8 @@ const Card = () => {
               </div>
 
             </div>
-            <div className='second mt-[4vh] trans medium:mt-0  medium:w-[49%] w-[100%] h-auto justify-between rounded-md flex'>
-              <div className=' px-5 bg-[#d8d0d0] rounded-md w-[49%] py-5'>
+            <div className='second  mt-[4vh] trans medium:mt-0  medium:w-[49%] w-[100%] h-auto justify-between rounded-md flex'>
+              <div className=' px-5 bg-[#d8d0d0]  hover:translate-y-[-2px]  hover:duration-300 rounded-md w-[49%] py-5'>
                 <div  >
                   <div className='cursor-pointer'><img src={assets.check_circle_outline} alt="" /></div>
                   <h2 className=' font-medium cursor-pointer'>Homework</h2>
@@ -46,7 +47,7 @@ const Card = () => {
                 </div>
                 <h2 className='cursor-pointer'>35 MIN AGO</h2>
               </div>
-              <div className=' px-5 bg-[#E1F5FD] rounded-md w-[49%] py-5'>
+              <div className=' px-5 bg-[#E1F5FD] rounded-md  hover:translate-y-[-2px]  hover:duration-300 w-[49%] py-5'>
                 <div >
                   <div><img src={assets.Vector_} alt="" /></div>
                   <h2 className='font-medium cursor-pointer'>Reading</h2>
@@ -57,8 +58,8 @@ const Card = () => {
 
             </div>
           </div>
-          <div className='flex cursor-pointer flex-wrap justify-between w-full'>
-            <div className=' mobile:w-[49%] w-[100%]  h-auto border rounded-md px-5 py-[2vh]'>
+          <div className='flex  cursor-pointer flex-wrap justify-between w-full'>
+            <div className=' mobile:w-[49%] w-[100%]  hover:translate-y-[-2px]  hover:duration-300 h-auto border rounded-md px-5 py-[2vh]'>
               <div >
                 <div className='flex justify-between'>
                   <div className='mb-[1vh]'>
@@ -83,7 +84,7 @@ const Card = () => {
 
 
             </div>
-            <div className='  mobile:w-[49%] mt-[4vh] w-[100%] cursor-pointer h-auto rounded-md flex flex-col  px-5 border py-[2vh]'>
+            <div className='  mobile:w-[49%] mt-[4vh] mobile:mt-0   hover:translate-y-[-2px]  hover:duration-300  w-[100%] cursor-pointer h-auto rounded-md flex flex-col  px-5 border py-[2vh]'>
               <div className='h-full relative '>
                 <h2 className='mb-[2vh] font-medium'> Overall progress</h2>
                 <div className='flex justify-between'>
@@ -111,7 +112,7 @@ const Card = () => {
             </div>
           </div>
           <div className='flex cursor-pointer justify-between w-full'>
-            <div className='flex rounded-md  px-[22.95px]  h-auto w-[49%] justify-between border'>
+            <div className='flex rounded-md  px-[22.95px]  hover:translate-y-[-2px]  hover:duration-300  h-auto w-[49%] justify-between border'>
               <div className='flex w-full items-center justify-between'>
                 <div className='flex items-center'>
                   <div><img src={assets.Group1008} alt="" /></div>
@@ -123,7 +124,7 @@ const Card = () => {
                 <div><img src={assets.keyboardarrow_right} alt="" /></div>
               </div>
             </div>
-            <div className='flex cursor-pointer rounded-md  py-[1vh] px-5 h-auto w-[49%] justify-between border'>
+            <div className='flex cursor-pointer rounded-md  hover:translate-y-[-2px]  hover:duration-300  py-[1vh] px-5 h-auto w-[49%] justify-between border'>
               <div className='flex w-full items-center justify-between'>
                 <div className='flex items-center'>
                   <div><img src={assets.Group1007} alt="" /></div>
