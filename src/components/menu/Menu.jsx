@@ -1,10 +1,11 @@
 import React from 'react';
 import { assets } from '../../assets/Assets';
 
-const SideBar = () => {
+
+const Menu = () => {
     return (
-        <div style={{}} className='sideBar hidden mobile-L:block text-sm  rounded-tl-[15px]  rounded-bl-[15px] pr-[19.22px] py-[19.22px] pl-[19.22px] bg-[#1e3586] text-white h-[100vh] w-[230px]'>
-            <div className='sideBar-Container flex flex-col h-full justify-between'>
+        <div style={{}} className='sideBar z-10 absolute left-0  transition-all translate-x-0 animate-fadeIn  text-sm  rounded-tl-[15px] pr-[19.22px] py-[19.22px] pl-[19.22px] bg-[#1e3586] text-white h-full w-[230px]'>
+            <div className=' flex flex-col h-full justify-between'>
                 <div className=' flex flex-col gap-[19.26px] '>
                     <div className=' flex items-center'>
                         <img className=' pr-2' src={assets.Vector} alt="" />
@@ -61,7 +62,7 @@ const SideBar = () => {
                             <div className=' mr-2'><img src={assets.Danger} alt="" /></div>
                             <p>Reports</p>
                         </div>
-                        <div className='flex items-center cursor-pointer '>
+                        <div className='flex items-center cursor-pointer text-xs '>
                             <div className=' mr-2'><img src={assets.Setting} alt="" /></div>
                             <p>Settings</p>
                         </div>
@@ -97,4 +98,4 @@ const SideBar = () => {
     )
 }
 
-export default SideBar
+export default Menu

@@ -23,6 +23,10 @@ import Group1002 from "./Group1002.png"
 import Group1003 from "./Group1003.png"
 import Group1004 from "./Group1004.png"
 import Rectangle1033 from "./Rectangle1033.png"
+import Icon_Button  from "./IconButton.svg"
+import uk from "./uk.svg"
+import search from "./search.svg"
+import profile_pic from "./profile_pic.jpg"
 
 
 export const assets = {
@@ -50,5 +54,10 @@ export const assets = {
     Group1002,
     Group1003,
     Group1004,
-    Rectangle1033
+    Rectangle1033,
+    Icon_Button,
+    uk,
+    search,
+    profile_pic
+
 }

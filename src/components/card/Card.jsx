@@ -1,29 +1,45 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { assets } from '../../assets/Assets'
 import Info from '../info/Info'
 import "../../index.css"
+import Navbar from '../navbar/Navbar'
+import SideBar from '../sidebar/SideBar'
+import { AppContext } from '../../appContext/AppContext'
+import Menu from '../menu/Menu'
 
 const Card = () => {
 
-  const [on, setOn] = useState(false)
+  // const [on, setOn] = useState(false)
+  const { on, setOn } = useContext(AppContext)
+
 
   return (
 
 
 
-    <div className=' *:text-sm grid h-screen animate-fadeIn w-[99%] verflow-y-scroll '>
+    <div className=' relative *:text-sm grid h-screen animate-fadeIn w-[99%] verflow-y-scroll '>
+      <div className=' block mobile-L:hidden sticky top-0 left-0  w-full z-20'>
+        <Navbar />
+      </div>
+      <span onClick={() => setOn(!on)}>
+        {on ? (
+          < Menu className=" absolute" />
+
+        ) : ("")}
+      </span>
+
       <div className=' w-full small:max-sm:bg-black   px-5 place-self-center flex flex-col'>
         <span className=' absolute right-28 right top-1 z-1 '>
 
         </span>
-        <info />
+        {/* <info /> */}
         <div className=' flex flex-col gap-9 medium:gap-10 place-items-center '>
           <div className=' w-full flex items-center justify-between px-5'>
             <h1 className=" text-xl font-bold mb-[] cursor-pointer">Professional Dashboard</h1>
-            <span onClick={() => setOn(!on)} className=' w-1/12  block custom-1233:hidden  mb-[-2%] cursor-pointer'>
-              {on ? (
+            <span className=' w-1/12  block custom-1233:hidden  mb-[-2%] cursor-pointer'>
+              {/* {on ? (
                 "hellow"
-              ) : (<img src={assets.Group1002} alt="" />)}
+              ) : (<img src={assets.Group1002} alt="" />)} */}
             </span>
           </div>
           <div className=' flex flex-wrap w-full justify-between '>
@@ -64,7 +80,7 @@ const Card = () => {
                 <div className='flex justify-between'>
                   <div className='mb-[1vh]'>
                     <p className='mb-[0.80%] cursor-pointer font-medium'>Group info</p>
-                    <p className='cursor-pointer'>13 students in the group</p>
+                    <p className='cursor-pointer text-xs'>13 students in the group</p>
                   </div>
 
                   <div><img src={assets.Vec_tor} alt="" /></div>
@@ -89,8 +105,8 @@ const Card = () => {
                 <h2 className='mb-[2vh] font-medium'> Overall progress</h2>
                 <div className='flex justify-between'>
                   <div className='mb-[18.59px]'>
-                    <p className=' font-medium'>Germiny for</p>
-                    <p className=' font-medium'> beginners</p>
+                    <p className=' font-medium text-xs'>Germiny for</p>
+                    <p className=' font-medium text-xs'> beginners</p>
                   </div>
                   <div className=''>
                     <img src={assets.Group1006} alt="" />
@@ -111,26 +127,26 @@ const Card = () => {
               </div>
             </div>
           </div>
-          <div className='flex cursor-pointer justify-between w-full'>
-            <div className='flex rounded-md  px-[22.95px]  hover:translate-y-[-2px]  hover:duration-300  h-auto w-[49%] justify-between border'>
+          <div className='flex flex-wrap cursor-pointer justify-between w-full'>
+            <div className='flex rounded-md  px-[22.95px]  hover:translate-y-[-2px]  hover:duration-300  h-auto  mobile:w-[49%] w-[100%] justify-between border'>
               <div className='flex w-full items-center justify-between'>
                 <div className='flex items-center'>
                   <div><img src={assets.Group1008} alt="" /></div>
                   <div>
                     <h2 className=' font-medium'>Grammer</h2>
-                    <p>+30 grammer rules</p>
+                    <p className='text-xs'>+30 grammer rules</p>
                   </div>
                 </div>
                 <div><img src={assets.keyboardarrow_right} alt="" /></div>
               </div>
             </div>
-            <div className='flex cursor-pointer rounded-md  hover:translate-y-[-2px]  hover:duration-300  py-[1vh] px-5 h-auto w-[49%] justify-between border'>
+            <div className='flex cursor-pointer rounded-md  hover:translate-y-[-2px]  hover:duration-300  py-[1vh] px-5 h-auto my-[2vh] mobile:w-[49%] w-[100%] justify-between border'>
               <div className='flex w-full items-center justify-between'>
                 <div className='flex items-center'>
                   <div><img src={assets.Group1007} alt="" /></div>
                   <div>
                     <h2 className=' font-medium'>Dictionary</h2>
-                    <p>+10 new words</p>
+                    <p className='text-xs'>+10 new words</p>
                   </div>
                 </div>
                 <div><img src={assets.keyboardarrow_right} alt="" /></div>
